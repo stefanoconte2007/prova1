@@ -1,0 +1,1855 @@
+<body data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="50">
+<a class="skip-link screen-reader-text" href="#maincontent">Salta al contenuto</a>
+<header class="it-header-wrapper">
+<div class="it-header-slim-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="it-header-slim-wrapper-content">
+<div class="nav-mobile">
+
+<a href="https://www.miur.gov.it/" target="_blank" title="Link ministero istruzione"><img src="/pvw2/img/logo-ministero-black.png" class="img-ministero" alt="Logo ministero istruzione"></a>
+
+
+</div>
+<!-- Sezione Autenticazione / Scelta Lingua -->
+<div class="header-slim-right-zone">
+<!-- multilang space -->
+
+<div class="it-access-top-wrapper">
+
+<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#LoginModalForm"><i aria-hidden="true" class="fa fa-user-circle"></i> Accedi</button>
+
+
+</div>
+</div>
+
+<!-- Modal cerca -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalTitle" style="display: none;" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<form role="search" action="/cerca">
+<div class="modal-header-fullsrc">
+<div class="container">
+<div class="row">
+<div class="col-11">
+<h2 class="modal-title" id="searchModalTitle">
+Cerca
+</h2>
+</div>
+<div class="col-1 pt-xl-3 pt-2">
+<button type="button" class="close" data-dismiss="modal" aria-label="Chiudi ricerca" aria-hidden="false">
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-close-big"></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-body-search">
+<div class="container">
+<div class="row" aria-hidden="false">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="form-group">
+<div class="input-group">
+<label for="cerca-txt" class="sr-only active" style="transition: none 0s ease 0s;">Cerca</label>
+<input type="hidden" name="tipo" value="cerca">
+<input type="text" name="cerca_sito" class="form-control" id="cerca-txt" placeholder="Cerca nel sito" data-element="search-modal-input">
+<div class="input-group-append">
+<button type="submit" class="btn btn-secondary mt-2" data-element="search-submit">Cerca</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- /Modal cerca -->
+
+<!-- Modal Login -->
+<div class="modal fade" id="LoginModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Accedi</strong></h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">button close</span>
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body mx-4">
+<div class="md-form mb-5">
+<input type="email" id="accedi-mail" class="form-control validate">
+<label data-error="wrong" data-success="right" for="accedi-mail">Nome Utente</label>
+</div>
+<div class="md-form pb-3">
+<input type="password" id="accedi-pwd" class="form-control validate">
+<label data-error="wrong" data-success="right" for="accedi-pwd">Password</label>
+<p class="font-small color-text d-flex justify-content-end"><a href="#" class="color-text ml-1 pwd-reset">Password dimenticata?</a></p>
+</div>
+<div class="md-form pb-1">
+<div class="alert alert-danger accedi-error d-none" role="alert">
+
+</div>
+</div>
+<div class="text-center mb-3">
+<input type="button" value="Accedi" class="btn color-box btn-block btn-rounded z-depth-1a btn-accedi">
+</div>
+<div class="text-center mb-3">
+-
+</div>
+<div class="text-center mb-3">
+<a href="#" class="spid_btn italia-it-button italia-it-button-size-m button-spid" aria-haspopup="true" aria-expanded="false" onclick="window.location.href='https://web.spaggiari.eu/home/app/default/loginsp.php?act=spidLoginPV&amp;custcode=BRII0006&amp;fin=https%3A%2F%2Fwww.pantanelli-monnet.edu.it%2Fpvw2%2Fapp%2Fdefault%2Ftools.php%3Fact%3DloginSPID%26rel%3DLw%3D%3D'">
+<span class="italia-it-button-icon">
+<img src="/home/img/spid_btn/spid-ico-circle-bb.svg" onerror="this.src='/home/img/spid_btn/spid-ico-circle-bb.png'; this.onerror=null;" alt="">
+</span>
+<span class="italia-it-button-text">Entra con SPID</span>
+</a>
+<a href="#" class="spid_btn italia-it-button italia-it-button-size-m button-spid" aria-haspopup="true" aria-expanded="false" onclick="window.location.href='https://web.spaggiari.eu/home/app/default/loginsp.php?act=spidLoginPV&amp;custcode=BRII0006&amp;fin=https%3A%2F%2Fwww.pantanelli-monnet.edu.it%2Fpvw2%2Fapp%2Fdefault%2Ftools.php%3Fact%3DloginSPID%26rel%3DLw%3D%3D'">
+<span class="italia-it-button-icon">
+<img src="/home/img/cie-graphics-master/SVG/Logo_CIE_ID.svg" onerror="this.src='/home/img/cie-graphics-master/PNG/entra con cie.png'; this.onerror=null;" alt="">
+</span>
+<span class="italia-it-button-text">Entra con CIE</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal Login -->
+
+<!-- Modal selezione utente -->
+<div class="modal fade" id="UserSelectModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel2"><strong>Seleziona utente</strong></h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">button close</span>
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body mx-4">
+
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal selezione utente -->
+
+<!-- Modal pwd dimenticata -->
+<div class="modal fade" id="ForgotPwdModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel3"><strong>Recupero password</strong></h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">button close</span>
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body mx-4">
+<form id="pvw-reminder-form">
+<div class="md-form pb-3">
+<input type="email" id="forgot-mail" name="eml" class="form-control validate">
+<label data-error="wrong" data-success="right" for="forgot-mail">E-mail</label>
+<small>Verrà inviato un messaggio all'indirizzo indicato con le istruzioni necessarie.</small>
+</div>
+<div class="md-form pb-1">
+<div class="realperson-challenge"><div class="realperson-text">&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;******&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;<br>&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;<br>&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;******&nbsp;&nbsp;&nbsp;<br>*******&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></div><div class="realperson-regen"><i class="fas fa-sync-alt"></i> rigenera codice</div></div><input type="text" name="captcha" class="captcha is-realperson" placeholder="Codice di controllo">
+</div>
+<div class="md-form pb-1">
+<div class="alert alert-success reset-success d-none" role="alert">
+E-mail inviata, si prega di controllare la casella di posta elettronica!
+</div>
+</div>
+<div class="md-form pb-1">
+<div class="alert alert-danger reset-error d-none" role="alert">
+
+</div>
+</div>
+<div class="text-center mb-3">
+<input type="hidden" value="akRSPWRQ" name="a">
+<input type="button" value="Invia" class="btn color-box btn-block btn-rounded z-depth-1a btn-reminder">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal pwd dimenticata -->
+
+<!-- Modal vari -->
+<div class="modal fade" tabindex="-1" role="dialog" id="error-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Errore</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-times-circle error-modal-icon"></i>
+<p class="error-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="ok-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Successo</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-check-circle ok-modal-icon"></i>
+<p class="ok-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="info-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Informazione</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-info-circle info-modal-icon"></i>
+<p class="info-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="loading-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title" style="font-weight:bold">Attendere...</span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center py-5 px-5">
+<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status"></div>
+</div>
+Attendere il completamento dell'operazione...
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="sp-event-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-body mx-4">
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="content-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-body">
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal vari -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="it-nav-wrapper">
+<div class="it-header-center-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="it-header-center-content-wrapper">
+<div class="it-brand-wrapper">
+<a href="/" title="Torna alla homepage">
+
+<h1>
+<span class="media">
+<img class="align-self-center logo_scuola" src="https://scaling.spaggiari.eu/BRII0006/logo/5231.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6HjkoZcUOGTiYi6QRxuVV5sOGTp63rmnr%2BRTYVh7%2BFO%2FGwXtspJHA9p4BXfBXCcE%2BNfMTv1f63V8Ma7anOoEpmr1vY686jQADlCXWoD41fhLPKDeb5KzEXlN3xj5VLED2HK76ruGkCrzhAMWUaH%2BXdg%3D" alt="I.T. &quot;PANTANELLI – MONNET&quot; ">
+
+</span>
+</h1>
+
+
+</a>
+</div>
+<div class="it-right-zone">
+<div class="it-search-wrapper">
+<div class="hidden-xs search" style="float:right;">
+<div class="pull-right">
+<span class="input-group-btn">
+<button class="btn-search search-link rounded-icon" type="button" data-toggle="modal" data-target="#searchModal" aria-label="Apri ricerca" data-element="search-modal-button">
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-search"></use>
+</svg>
+</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="navigation-bar" class="it-header-navbar-wrapper sticky">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav class="navbar navbar-expand-lg has-megamenu" aria-label="Menu principale">
+<button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-burger"></use>
+</svg>
+</button>
+<div class="navbar-collapsable" id="nav10">
+<div class="overlay"></div>
+<div class="close-div sr-only">
+<button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+</div>
+<div class="menu-wrapper">
+<ul class="navbar-nav" data-element="menu">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>ISTITUTO</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="/pagine/presentazione" target="_self">
+<span>Presentazione</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/dirigente-scolastico" target="_self">
+<span>Dirigente Scolastico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/mission-e-vision" target="_self">
+<span>Mission e Vision</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/le-sedi-distituto" target="_self">
+<span>Le Sedi d'Istituto</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/organigramma-e-funzionigramma" target="_self">
+<span>Organigramma e Funzionigramma</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/regolamenti" target="_self">
+<span>Regolamenti</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/pon---fondi-strutturali-europei" target="_self">
+<span>PON - Fondi Strutturali Europei</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="https://www.pantanelli-monnet.edu.it/privacy" target="_self">
+<span>Privacy</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="/pagine/piano-triennale-rav-rendicontazione-sociale" target="_self">
+<span>PTOF</span>
+</a>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>INDIRIZZI DI STUDIO</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="/pagine/amministrazione-finanza-e-marketing" target="_self">
+<span>Amministrazione, Finanza e Marketing</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/relazioni-internazionali-per-il-marketing" target="_self">
+<span>Relazioni Internazionali per il Marketing</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/turismo" target="_self">
+<span>Turismo</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/agraria-agroalimentare-e-agroindustria" target="_self">
+<span>Agraria, Agroalimentare e Agroindustria</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/costruzioni-ambiente-e-territorio" target="_self">
+<span>Costruzioni Ambiente e Territorio</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/elettronica-ed-elettrotecnica" target="_self">
+<span>Elettronica</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/informatica-e-telecomunicazioni" target="_self">
+<span>Informatica</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>PROGETTI</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="/pagine/execdl" target="_self">
+<span>Certificazioni Informatiche ICDL (già ECDL)</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/olimpiadi-di-informatica" target="_self">
+<span>Olimpiadi di Informatica</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/certificazioni-linguistiche" target="_self">
+<span>Certificazioni Linguistiche</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/pcto-alternanza-scuola-lavoro" target="_self">
+<span>PCTO (Alternanza Scuola Lavoro)</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/progetto-euroscola" target="_self">
+<span>Progetto Euroscola</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/costruisci-il-tuo-futuro" target="_self">
+<span>Costruisci il tuo Futuro</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/a-tutta-birra" target="_self">
+<span>A Tutta Birra</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/tecniche-di-innesto" target="_self">
+<span>Tecniche di Innesto</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/educazione-allassaggio-degli-olii-di-oliva" target="_self">
+<span>Educazione all'Assaggio degli Olii di Oliva</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/leggo-ergo-sum" target="_self">
+<span>Leggo Ergo Sum</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="/archivio-news" target="_self">
+<span>NEWS</span>
+</a>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>INFO</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="/pagine/orario-delle-lezioni" target="_self">
+<span>Orario delle Lezioni</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/libri-di-testo-as-20232024" target="_self">
+<span>Libri di Testo A.S. 2023/2024</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/registro-elettronico" target="_self">
+<span>Registro Elettronico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/google-workspace" target="_self">
+<span>Google Workspace</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/risultati-prove-invalsi" target="_self">
+<span>Risultati prove Invalsi</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>MODULISTICA</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="https://web.spaggiari.eu/ber/app/default/compilazione_modulo.php?target=pvw&amp;sede_codice=BRII0006" target="_blank">
+<span>Modulistica Spaggiari On-Line</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/nuovi-format-didattici-20202021" target="_self">
+<span>Format Ambito Didattico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/documenti-studenti-1" target="_self">
+<span>Documenti Genitori</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+<span>CONTATTI</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="custom-submenu">
+
+<li>
+<a class="list-item" href="/pagine/recapiti-delle-sedi" target="_self">
+<span>Recapiti delle Sedi</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/dirigente-scolastico" target="_self">
+<span>Dirigente Scolastico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/vicepresidenza-e-referenti-di-sedi" target="_self">
+<span>Vicepresidenza e Referenti di Sedi</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/direttore-dei-servizi-generali-amministrativi" target="_self">
+<span>Direttore dei Servizi Generali Amministrativi</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/segreteria-sede-centrale" target="_self">
+<span>Segreteria Sede Centrale</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/segreteria-sede-agraria" target="_self">
+<span>Segreteria Sede Agraria</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/pagine/ufficio-tecnico" target="_self">
+<span>Ufficio Tecnico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="/form-contatti" target="_self">
+<span>Modulo Contatti</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+</ul>
+<div class="it-search-wrapper">
+<div class="hidden-desk search" style="float:left;">
+<div class="pull-right">
+<form class="navbar-right" role="search" action="/cerca">
+<div class="input-group search-shadow">
+<label for="cerca-mobile" class="sr-only active" style="transition: none 0s ease 0s;">Campo di ricerca per le pagine del sito</label>
+<input type="hidden" name="tipo" value="cerca">
+<input id="cerca-mobile" type="text" name="cerca_sito" class="form-control" placeholder="Cerca nel sito">
+<span class="input-group-btn">
+<button class="btn-search search-link rounded-icon" type="submit">
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-search"></use>
+</svg>
+</button>
+</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</header>
+
+
+<main class="container pb-4 px-4 " id="maincontent">
+
+
+<section class="sezione-html section-with-bg wow fadeInUp" aria-label="HTML personalizzato">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>HTML personalizzato</h2>
+</div>
+</div>
+</div>
+<div class="row no-gutters widgets-wrap clearfix justify-content-center">
+<iframe width="675" height="337" src="https://www.youtube.com/embed/C8q-mIosFS4" title="Scegli il tuo futuro - Istituto Tecnico &quot;Pantanelli Monnet&quot; - Ostuni" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+
+ 
+
+</div>
+</section>
+
+
+<section class="sezione-html section-with-bg wow fadeInUp" aria-label="HTML personalizzato">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>HTML personalizzato</h2>
+</div>
+</div>
+</div>
+<div class="row no-gutters widgets-wrap clearfix justify-content-center">
+<!--<p align="center"><a href="https://forms.gle/nXsk4Q7GBRVojf6a8" target="_blank"><img class="" alt="" style="width: 100%;" src="https://scaling.spaggiari.eu/BRII0006/testo/5429.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D"></a>
+</p>-->
+</div>
+</section>
+
+
+<section class="sezione-widgets section-with-bg" aria-label="Widget trasparenza">
+<div class="row no-gutters amministrativo-wrap clearfix section-with-bg wow fadeInUp" id="amministrativo">
+<div class="col-md-6 col-12">
+<div class="sezione-ammin aos-init aos-animate" data-aos="fade-up">
+<a href="amministrazione-trasparente"><img src="/pvw2/img/widgets/trasparenza.png" class="img-fluid" alt="Amministrazione Trasparente"></a>
+</div>
+</div>
+<div class="col-md-6 col-12">
+<div class="sezione-ammin aos-init aos-animate" data-aos="fade-up">
+<a href="albo-online"><img src="/pvw2/img/widgets/albo_online.png" class="img-fluid" alt="Albo Online"></a>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="sezione-html section-with-bg wow fadeInUp" aria-label="HTML personalizzato">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>HTML personalizzato</h2>
+</div>
+</div>
+</div>
+<div class="row no-gutters widgets-wrap clearfix justify-content-center">
+<p></p>
+<p><a href="https://www.pantanelli-monnet.edu.it/pagine/corsi-serali"><img class="" alt="Serale" style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="https://scaling.spaggiari.eu/BRII0006/testo/5637.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D"></a></p>
+</div>
+</section>
+
+
+<section class="sezione-box section-with-bg wow fadeInUp" aria-label="Box">
+<style>
+
+.box45
+{
+background-color: #F73B3B;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box45:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box43
+{
+background-color: #F73B3B;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box43:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box41
+{
+background-color: #F73B3B;
+color: #040202;
+border-radius: 30px;
+border: 0;
+}
+
+.box41:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box39
+{
+background-color: #93E936;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box39:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box37
+{
+background-color: #637CF1;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box37:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box35
+{
+background-color: #637CF1;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box35:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+.box33
+{
+background-color: #637CF1;
+color: #000000;
+border-radius: 30px;
+border: 0;
+}
+
+.box33:hover
+{
+background-color: #000000;
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s ease;
+}
+
+
+
+</style>
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>Box</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+
+<a href="/pagine/amministrazione-finanza-e-marketing" class="m-2 box-indirizzi box45">
+Amministrazione, Finanza e Marketing
+</a>
+
+
+<a href="/pagine/relazioni-internazionali-per-il-marketing" class="m-2 box-indirizzi box43">
+Relazioni Internazionali per il Marketing
+</a>
+
+
+<a href="/pagine/turismo" class="m-2 box-indirizzi box41">
+Turismo
+</a>
+
+
+<a href="/pagine/agraria-agroalimentare-e-agroindustria" class="m-2 box-indirizzi box39">
+Agraria, Agroalimentare e Agroindustria
+</a>
+
+
+<a href="/pagine/costruzioni-ambiente-e-territorio" class="m-2 box-indirizzi box37">
+Costruzioni, Ambiente e Territorio
+</a>
+
+
+<a href="/pagine/elettronica-ed-elettrotecnica" class="m-2 box-indirizzi box35">
+Elettronica ed Elettrotecnica                                                                 
+</a>
+
+
+<a href="/pagine/informatica-e-telecomunicazioni" class="m-2 box-indirizzi box33">
+Informatica e Telecomunicazioni
+</a>
+
+
+</div>
+</section>
+
+
+<section class="sezione-html section-with-bg wow fadeInUp" aria-label="Html">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>Html</h2>
+</div>
+</div>
+</div>
+<div class="row no-gutters widgets-wrap clearfix justify-content-center">
+<style>
+.box-indirizzi {
+    width: 17%;
+    text-align: center;
+    padding: 10px;
+}
+    
+    @media (max-width: 767px){
+        
+        .box-indirizzi {
+    width: 100%;
+
+}
+    }
+    @media (max-width: 991px) and (min-width: 768px){
+        .box-indirizzi {
+    width: 21%;
+
+}
+    }
+</style>
+</div>
+</section>
+
+
+<section class="sezione-notizie" aria-label="Notizie">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>Notizie</h2>
+</div>
+</div>
+</div>
+<div class="row">
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/-offerta-formativa-pugliese-webinar-regionale-con-la-partecipazione-del-ministro-valditara-le-novit-della-sperimentazione-della-filiera-tecnologico-professionale" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5941.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="orientamento" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/-offerta-formativa-pugliese-webinar-regionale-con-la-partecipazione-del-ministro-valditara-le-novit-della-sperimentazione-della-filiera-tecnologico-professionale" target="_self"> Offerta formativa pugliese: webinar regionale con la partecipazione del Ministro Valditara. “Le novità della sperimentazione della filiera tecnologico-professionale”<span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">&nbsp;</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/i-ragazzi-del-pantanelli--monnet-ad-auschwitz-e-birkenau-con-il-treno-della-memoria" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5926.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="Il Treno della Memoria" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/i-ragazzi-del-pantanelli--monnet-ad-auschwitz-e-birkenau-con-il-treno-della-memoria" target="_self">I ragazzi del Pantanelli- Monnet ad Auschwitz e Birkenau con il "Treno della Memoria"<span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">E’ rientrato il 28 gennaio scorso dalla Polonia il gruppo di 47 studenti e studentesse delle classi quarte dell’ITET Pantanelli-Monnet che ha preso...</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/cat-in-azione" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5877.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="CAT in azione" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/cat-in-azione" target="_self">CAT in AZIONE<span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">
+&nbsp;</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/sperimentazione-quadriennale-per-il-turismo-allitet-pantanelli--monnet-di-ostuni" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5876.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="Turismo quadriennale" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/sperimentazione-quadriennale-per-il-turismo-allitet-pantanelli--monnet-di-ostuni" target="_self">APERTE LE ISCRIZIONI PER LA SPERIMENTAZIONE QUADRIENNALE DEL TURISMO <span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">L’Istituto Tecnico Economico e Tecnologico Pantanelli – Monnet di Ostuni (Br)&nbsp; è stato autorizzato ad attuare il...</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/campagna-telethon" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5863.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="Campagna Telethon" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/campagna-telethon" target="_self">Campagna Telethon<span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">Gli studenti dell’ITET Pantanelli – Monnet hanno vissuto, nelle giornate del 7, 10, 16 e 17 dicembre 2023, un’esperienza di volontariato e...</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-sm-4 separatore">
+<div class="card-wrapper">
+<div class="card card-img no-after">
+
+<a href="/pagine/incontro-formativo-fisco--scuola-1" target="_self">
+<div class="img-wrapper">
+<img src="https://scaling.spaggiari.eu/BRII0006/thumbnail/5859.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6Pk9jQH5POS%2FquVc8aOi3ns2htM1BhF%2Fr5nAtRVDWvfTyMAZSK1CdbWaDHnglQjglAuFwI5cB%2FVmg%2FuX4At01ifvHVhzR520%2FYme%2BqShUDP%2B9Qj7hNmcQs3PUZ%2B9YD5vdA%3D%3D" alt="Fisco &amp; Scuola" class="img-fluid w-100">
+</div>
+</a>
+
+
+<div class="card-body">
+<h3 class="card-title"><a href="/pagine/incontro-formativo-fisco--scuola-1" target="_self">Incontro formativo Fisco &amp; Scuola<span class="badge badge-pill badge-danger ml-1">NEWS</span></a></h3>
+<p class="card-text">Si è tenuto lo scorso 19 dicembre, presso l’Aula Magna della Sede Pantanelli,&nbsp; un importante incontro formativo sul tema della legalità...</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<section class="sezione-widgets section-with-bg wow fadeInUp" aria-label="Widget">
+<div class="row d-none">
+<div class="col">
+<div class="section_title text-center">
+<h2>Widget</h2>
+</div>
+</div>
+</div>
+<div class="row no-gutters widgets-wrap clearfix justify-content-center">
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://olicyber.it/" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5811.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Olimpiadi Italiane di Cybersicurezza"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/futura-la-scuola-per-litalia-di-domani" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5671.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="PNNR"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/pon---fondi-strutturali-europei" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5085.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="PON-nuovo"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://lavoroperte.regione.puglia.it/welcomepage/" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5407.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Lavoro X Te"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://www.youtube.com/channel/UCR4JdZXpIalsrw3f41Luyyg" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/4993.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="youtube"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/comunicati" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5247.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="comunicati"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://lnx.pantanelli-monnet.edu.it/" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5325.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="vecchio-sito"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://www.pantanelli-monnet.edu.it/privacy" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5253.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="privacy"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/photo-gallery" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5289.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="photogallery"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://www.pantanelli-monnet.edu.it/comunicati?tipo=comunicati&amp;categoria=30006&amp;storico=&amp;cerca=" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5251.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Bacheca Sindacale"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://web.spaggiari.eu/cvv" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5001.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="ClasseViva"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="http://www.erasmusplus.it/" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/4995.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="EU flag-Erasmus+"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/pcto-alternanza-scuola-lavoro" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/4997.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="PCTO"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/execdl" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/4999.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="exECDL"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="/pagine/inclusione" target="_self"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5005.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Inclusione"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://play.google.com/store/apps/dev?id=6127479926218497209" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5007.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Google play"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+<div class="col-lg-3 col-md-4 col-xs-6">
+<div class="widget aos-init" data-aos="fade-up">
+<a href="https://www.agro-polis.it/" target="_blank"><img src="https://scaling.spaggiari.eu/BRII0006/widget/5287.png&amp;rs=%2FtccTw2MgxYfdxRYmYOB6MBuLVa%2BNrJ0P%2FLEiGWNzqTrgln8v1dFB63p5qTp4dENXTp76LtSZtFhBkaNLjgL3fW9jrzqNAAOUJdagPjV%2BEtguqb8xeBxWR5C0Da%2BYyU0SV7D4UBs4UsAzro2Gv8Smw%3D%3D" class="img-fluid" alt="Agro-polis"><span class="sr-only">Widget con link a risorsa</span></a>
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<section class="cookiebar-container d-none" role="alert" aria-label="Banner dei cookie">
+<div class="cookiebar" tabindex="1">
+<p>
+Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella
+<a href="/cookie-policy" class="text-white"><strong>COOKIE POLICY</strong></a>.<br>
+</p>
+<div class="cookiebar-buttons">
+<button tabindex="4" class="cookiebar-btn cookiebar-custom" data-toggle="modal" data-target="#cookie-modal">Personalizza</button>
+<button tabindex="3" class="cookiebar-btn cookiebar-ko ml-4">Rifiuta tutti<span class="sr-only"> i cookies</span></button>
+<button tabindex="2" class="cookiebar-btn cookiebar-ok ml-4">Accetta tutti<span class="sr-only"> i cookies</span></button>
+</div>
+</div>
+</section>
+<div class="modal fade" role="dialog" id="cookie-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Gestione cookie</strong></span>
+</div>
+<div class="modal-body">
+<div class="row mb-3">
+<div class="col-12">
+<p>In questa schermata è possibile scegliere quali cookie consentire.<br>
+I cookie necessari sono quelli che consentono il funzionamento della piattaforma e non è possibile disabilitarli.<br>
+Per conoscere quali sono i cookie necessari al funzionamento potete visionare la <a href="/cookie-policy"><strong>COOKIE POLICY</strong></a>.</p>
+</div>
+</div>
+<form id="cookie_form">
+<input type="hidden" name="act" value="cookieConsent">
+<div id="accordionDiv1" class="collapse-div" role="tablist">
+<div class="collapse-header" id="headingA0">
+<div class="row">
+<div class="col-3 col-md-1">
+<button type="button" data-toggle="collapse" data-target="#accordion0" aria-expanded="false" aria-controls="accordion0">
+</button>
+</div>
+<div class="col-9 col-md-11">
+<div class="form-check form-check-group mb-1">
+<div class="toggles">
+<label for="toggle1">
+Cookie necessari per il funzionamento
+<input type="checkbox" id="toggle1" checked="" disabled="">
+<span class="lever"></span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordion0" class="collapse" role="tabpanel" aria-labelledby="headingA0" data-parent="#accordionDiv1">
+<div class="collapse-body">
+I cookie necessari per il funzionamento non possono essere disabilitati. È possibile consultare l'elenco nella pagina della cookie policy.
+</div>
+</div>
+
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary cookiebar-ok">Accetta tutti</button>
+<button type="button" class="btn btn-primary btn-cookie-save">Salva le preferenze</button>
+</div>
+</div>
+</div>
+</div>
+
+
+</main>
+
+
+<footer class="it-footer">
+<div class="it-footer-main">
+<div class="container">
+<div class="py-2 border-white border-top">
+
+<div class="row mb-3">
+<div class="col-12 col-lg-4">
+<img style="height: 100px;" src="/pvw2/img/logo-eu-white.svg" alt="Logo EU">
+</div>
+<div class="col-12 col-lg-8">
+<img style="height: 60px;" class="ml-sm-2 mt-lg-2 mt-xl-2" src="/pvw2/img/logo-repubblica-white.svg" alt="Logo Repubblica">
+I.T. "PANTANELLI – MONNET" 
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-8">
+<h3>Contatti</h3>
+<p><strong>I.T. "PANTANELLI – MONNET" </strong></p>
+<div class="pb-2 pr-2">
+<ul class="list">
+
+<li><i aria-hidden="true" class="fa fa-map-marked-alt"></i> Via D. Silletti, 1 – 72017 Ostuni (BR) </li>
+
+
+
+<li><i aria-hidden="true" class="fa fa-phone"></i> Tel: <a href="tel:0831.331217">0831.331217</a></li>
+
+
+
+<li><i aria-hidden="true" class="fa fa-envelope"></i> Email: <a href="mailto:brtd100004@istruzione.it">brtd100004@istruzione.it<span class="sr-only">Link per inviare una mail</span></a></li>
+
+
+
+<li><i aria-hidden="true" class="fa fa-mail-bulk"></i> PEC: <a href="mailto:brtd100004@pec.istruzione.it">brtd100004@pec.istruzione.it<span class="sr-only">Link per inviare una mail</span></a></li>
+
+
+
+<li><i aria-hidden="true" class="fa fa-address-card"></i> C.F.: 90053650744</li>
+
+
+
+</ul>
+</div>
+<div class="pb-2 pr-2">
+<ul class="list">
+
+<li>Codice Univoco di Fatturazione Q65P2V</li>
+
+
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 pb-2">
+
+<div class="p-4">
+&nbsp;
+</div>
+
+
+<div class="pb-2">
+<div class="important-link">
+<h3 class="sr-only">Sezione Link Utili</h3>
+<ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row link-flex">
+<li class="list-inline-item margin-flex"><a href="/cookie-policy" title="Cookie Policy">Cookie policy</a></li>
+<li class="list-inline-item margin-flex"><a href="/note-legali" title="Note Legali" data-element="legal-notes">Note legali</a></li>
+<li class="list-inline-item margin-flex"><a href="/privacy" title="Privacy" data-element="privacy-policy-link">Informativa Privacy</a></li>
+<li class="list-inline-item margin-flex"><a href="/urp" title="URP">Ufficio Relazioni con il Pubblico</a></li>
+<li class="list-inline-item margin-flex"><a href="https://form.agid.gov.it/view/856c70f8-a17d-4c98-9d7f-308db65191d6" target="_blank" title="Dichiarazione di accessibilità" data-element="accessibility-link">Dichiarazione di accessibilità</a></li>
+<li class="list-inline-item margin-flex"><a href="https://form.agid.gov.it/view/68230786-5b7c-495d-b4e4-383f499047da" target="_blank" title="Obiettivi di accessibilità">Obiettivi di accessibilità</a></li>
+<li class="list-inline-item margin-flex"><a href="/whistleblowing" title="Whistleblowing">Whistleblowing</a></li>
+<li class="list-inline-item margin-flex "><a href="#" data-toggle="modal" data-target="#cookie-modal" title="Gestione consensi cookie">Gestione consensi cookie</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-4 pb-2">
+<ul class="list-inline text-left social">
+<li>Pagina visualizzata <span class="footer-visite-count">60672</span> volte</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="it-footer-small-prints clearfix">
+<div class="container">
+<h3 class="sr-only">Sezione Copyright</h3>
+<div class="box-copyright">
+<div class="primavisione-web">
+<img src="/pvw2/img/logo.png" alt="Logo Prima Visione Web" class="logo-pvw">
+</div>
+<div class="pvw_footer">
+Copyright 2024 | Engineered and powered by Gruppo Spaggiari Parma S.p.A. | Divisione Publishing &amp; New Social Media<br>
+<a href="/disclaimer" class="footer-disclaimer">Disclaimer trattamento dati personali</a>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex align-items-center">
+<a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top shadow back-to-top-show">
+<svg class="icon icon-light"><use xlink:href="/pvw2/img/sprite.svg#it-arrow-up"></use></svg><span class="sr-only">Back to top</span>
+</a>
+</div>
+</footer>
+
+
+<script>window.__PUBLIC_PATH__ = "/pvw2/fonts";</script>
+<script>window.BOOTSTRAP_ITALIA_VERSION = '1.6.4';</script>
+
+<script>
+var GlobalTranslationArray = {
+oggi            :   'Oggi',
+giorno          :   'Giorno',
+mese            :   'Mese',
+settimana       :   'Settimana',
+lista           :   'Lista',
+tuttoilgiorno   :   'Tutto il giorno',
+noeventi        :   'Nessun evento da visualizzare',
+arraymesi       :   ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+arraygiorni     :   ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"]
+};
+</script>
+
+
+<script src="/pvw2/lib/js/bootstrap-italia.bundle.min.js?v=20240221"></script>
+<script src="/pvw2/lib/js/common.js?v=20240221"></script>
+<script src="/auth/lib/js/jquery-AuthApi2.js?v=20240221"></script>
+<script src="/commons/lib/jsx/jQuery/plugins/realperson/jquery.plugin.min.js?v=20240221"></script>
+<script src="/pvw2/lib/js/realperson_custom.js?v=20240221"></script>
+<script>
+$(document).ready(function(){
+$('.captcha').realperson({
+length: 5,
+regenerate: '<i class="fas fa-sync-alt"></i> rigenera codice',
+chars: $.realperson.alphanumeric,
+hashName: '{n}Hash',
+});
+
+$('[data-tooltip="tooltip"]').tooltip();
+
+$('.select-submit').change(function(){
+$('.form-submit').submit();
+});
+
+$('#accedi-mail').keypress(function(e) {
+if(e.which == 13) {
+doLogin();
+}
+});
+
+$('#accedi-pwd').keypress(function(e) {
+if(e.which == 13) {
+doLogin();
+}
+});
+
+$('.pwd-reset').click(function(){
+doReset();
+});
+
+$('.btn-accedi').click(function(){
+doLogin();
+});
+
+$('.btn-logout').click(function(){
+doLogout();
+});
+
+if ($('.avatar-profile').length>0)
+{
+inviaDatiASync('/tools/app/default/get_avatar.php', null, function(json){
+if(json)
+{
+var resp = JSON.parse(json);
+if (resp.foto!=undefined && resp.foto!='')
+{
+var src = "/sps/app/default/cache-img.php?sz=100&ori="+resp.foto;
+$('.avatar-profile').attr('src', src);
+}
+}
+});
+}
+
+if ($('.language_select').length>0)
+{
+$('.language_select').click(function(){
+var data = {
+'act'       :   'changeLang',
+'lang'      :   $(this).attr('data-lang')
+};
+inviaDatiASync('/pvw2/app/default/tools.php', data, function(){
+location.reload();
+});
+});
+}
+
+$('.cookiebar-ok').click(function(){
+var data = {
+'act'       :   'cookieConsent',
+'cookie'    :   'all'
+};
+inviaDatiASync('/pvw2/app/default/tools.php', data, function(){
+location.reload();
+});
+});
+
+$('.cookiebar-ko').click(function(){
+var data = {
+'act'       :   'cookieConsent',
+'cookie'    :   'none'
+};
+inviaDatiASync('/pvw2/app/default/tools.php', data, function(){
+location.reload();
+});
+});
+
+$('.btn-cookie-save').click(function(){
+var cookie_list=[];
+$('#cookie_form input[type="checkbox"]').each(function(){
+if ($(this).is(':checked'))
+{
+cookie_list.push($(this).attr('data-id'));
+}
+});
+var data = {
+'act'       :   'cookieConsent',
+'cookie'    :   cookie_list.join(',')
+};
+inviaDatiASync('/pvw2/app/default/tools.php', data, function(){
+location.reload();
+});
+});
+
+if ($('.menu-laterale').length>0)
+{
+if ($('.menu-laterale a.current').length>0)
+{
+$('.menu-laterale a.current').parents(".collapse").not('.menu-laterale').collapse("toggle");
+if ($('.menu-laterale a.current').find('svg').length>0)
+{
+$('.menu-laterale a.current').siblings('ul').collapse("toggle");
+}
+$('.menu-laterale a.current').parents('li:not(.base-parent)').addClass('show');
+}
+
+if ($('.toggle-collapse').length>0)
+{
+$('.toggle-collapse').click(function(e){
+e.preventDefault();
+});
+}
+}
+});
+
+window.onscroll = function (){
+navbarSticky();
+};
+
+function navbarSticky()
+{
+var nav = document.getElementById('navigation-bar');
+var sticky = nav.offsetTop+50;
+
+if (window.pageYOffset >= sticky) {
+nav.classList.add('sticky');
+} else {
+nav.classList.remove('sticky');
+}
+}
+</script>
+
+
+<script src="/pvw2/lib/js/calendarorganizer.js?v=20240221"></script>
+<script src="/pvw2/lib/js/jquery.scrollbox.js?v=20240221"></script>
+<script src="/pvw2/lib/js/schoolplanner.js?v=20240221"></script>
+<script src="/pvw2/lib/js/aos.js?v=20240221"></script>
+<script>
+$(document).ready(function(){
+AOS.init({
+delay: 50,
+duration: 2000
+});
+
+if ($('.rssfeed').length>0)
+{
+$('.rssfeed').each(function(){
+var attuale=$(this);
+getRssFeed(attuale.attr('data-url'), function(result){
+attuale.html(result);
+});
+});
+}
+
+if ($('.sp-container').length>0)
+{
+$('[data-toggle="tooltip"]').tooltip();
+}
+
+if ($('#box-calendario').length>0)
+{
+var date = new Date();
+var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 1);
+var data={
+'act'           :   'calendar-feed',
+'data_start'    :   firstDay.toISOString().slice(0,10),
+'data_stop'     :   lastDay.toISOString().slice(0,10)
+};
+inviaDatiASync(checkSeoUrl()+'tools.php', data, function(result){
+var calendar = new Calendar(
+"box-calendario",
+"small",
+[
+1,
+3
+],
+[
+"#93E936",
+"#93E936",
+"#FDFDFF",
+"#FDFDFF"
+],
+{
+indicator: true,
+indicator_type: 1,
+indicator_pos: "bottom",
+lang: $('html').attr('lang')
+}
+);
+
+if (result.trim()!='')
+{
+result=JSON.parse(result);
+}
+
+var organizer = new Organizer(
+"box-eventi",
+calendar,
+result
+);
+
+organizer.onMonthChange = function (callback){
+var date=organizer.calendar.date;
+var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 1);
+var data2={
+'act'           :   'calendar-feed',
+'data_start'    :   firstDay.toISOString().slice(0,10),
+'data_stop'     :   lastDay.toISOString().slice(0,10)
+};
+inviaDatiASync(checkSeoUrl()+'tools.php', data2, function(result2){
+if (result2!='')
+{
+organizer.data = JSON.parse(result2);
+callback();
+}
+});
+};
+});
+}
+
+if ($('.latest-news-feed').length>0)
+{
+$('.latest-news-feed').each(function(){
+var attuale = $(this);
+if (attuale.attr('data-tipo')=='news')
+{
+var data={
+'act'           :   'getUltimeNews',
+'colonne'       :   attuale.find('.vc_list').attr('data-colonne'),
+'max_elementi'  :   attuale.find('.vc_list').attr('data-max_elementi'),
+'no_immagini'   :   attuale.find('.vc_list').attr('data-no_immagini'),
+};
+inviaDatiASync(checkSeoUrl()+'tools.php', data, function(result){
+attuale.find('.vc_list').html(result);
+bindNews(attuale);
+});
+}
+else
+{
+bindNews(attuale);
+}
+});
+}
+});
+
+function bindNews(attuale)
+{
+attuale.find(".verticalCarousel").scrollbox({
+switchAmount: 4,
+});
+
+attuale.find('.vc_goUp').click(function(){
+attuale.find('.verticalCarousel').trigger('backward');
+});
+attuale.find('.vc_goDown').click(function(){
+attuale.find('.verticalCarousel').trigger('forward');
+});
+}
+
+$('body').on('click', 'a.schoolplanner_event', function() {
+var data={
+'act'           :   'fullcalendar-event',
+'id'            :   $(this).attr('data-id'),
+'tipo'          :   $(this).attr('data-tipo'),
+'modal'         :   2
+};
+inviaDatiASync(checkSeoUrl()+'tools.php', data, function(risultato){
+$('#sp-event-modal .modal-body').html(risultato);
+$('#sp-event-modal').modal('show');
+});
+return false;
+});
+</script>
+
+
+<script>
+if (inIframe() && )
+{
+$('.cookiebar-container').remove();
+}
+</script>
+
+
+
+
+
+
+</body>
